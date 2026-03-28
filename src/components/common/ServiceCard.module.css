@@ -1,0 +1,47 @@
+.card {
+  background: rgba(255, 255, 255, 0.05); /* Assuming dark background container */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(201, 168, 76, 0.5); /* Dorado sutil */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: rgba(201, 168, 76, 0.15);
+  border-radius: 12px;
+  color: #C9A84C; /* Dorado sutil */
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.description {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #E2E8F0;
+  line-height: 1.6;
+  margin: 0;
+}

@@ -1,0 +1,56 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon {
+  display: flex;
+}
+
+/* Variants */
+.primary {
+  background-color: #0B1F3A;
+  color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(11, 31, 58, 0.2);
+}
+
+.primary:hover {
+  background-color: #0d274a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(11, 31, 58, 0.3);
+}
+
+.secondary {
+  background-color: transparent;
+  color: #0B1F3A;
+  border: 2px solid #0B1F3A;
+}
+
+.secondary:hover {
+  background-color: #0B1F3A;
+  color: #FFFFFF;
+}
+
+/* Sizes */
+.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.medium {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}

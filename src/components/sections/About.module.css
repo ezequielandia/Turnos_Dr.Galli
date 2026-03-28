@@ -1,0 +1,157 @@
+.section {
+  padding: 6rem 0;
+  background-color: #F7FAFC;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.imageColumn {
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(11, 31, 58, 0.1);
+}
+
+.imageWrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 8px solid #FFFFFF;
+  border-radius: 20px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.experienceBadge {
+  position: absolute;
+  bottom: 2rem;
+  right: -1rem;
+  background-color: #0B1F3A;
+  color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(11, 31, 58, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 10;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+}
+
+@media (min-width: 768px) {
+  .experienceBadge {
+    right: -2rem;
+  }
+}
+
+.experienceNumber {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #C9A84C;
+  line-height: 1;
+}
+
+.experienceText {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.contentColumn {
+  padding-left: 0;
+}
+
+@media (min-width: 992px) {
+  .contentColumn {
+    padding-left: 2rem;
+  }
+}
+
+.subtitle {
+  font-family: 'Inter', sans-serif;
+  color: #0B1F3A;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #0B1F3A;
+  margin-bottom: 0.25rem;
+}
+
+.qualification {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;
+  color: #C9A84C;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.bio {
+  color: #4A5568;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.highlightsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .highlightsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.highlightItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #1A202C;
+  font-weight: 500;
+}
+
+.checkIcon {
+  color: #25D366;
+}
