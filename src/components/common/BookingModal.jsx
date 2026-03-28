@@ -37,6 +37,7 @@ const BookingModal = ({ isOpen, onClose }) => {
       setStep(1);
       setSelectedDate(null);
       setSelectedTime(null);
+      setFormData({ name: '', phone: '', email: '' });
       generateDatesAndFetchEvents();
     }
   }, [isOpen]);
@@ -217,7 +218,7 @@ const BookingModal = ({ isOpen, onClose }) => {
             >
             <div className={styles.modalHeader}>
               <h2 className={styles.modalTitle}>Agendar Turno</h2>
-              <button className={styles.closeBtn} onClick={onClose} disabled={submitting}>
+              <button type="button" className={styles.closeBtn} onClick={onClose} disabled={submitting}>
                  <X size={24} />
               </button>
             </div>
@@ -331,13 +332,12 @@ const BookingModal = ({ isOpen, onClose }) => {
                     </div>
                     
                     <div className={styles.formGroup}>
-                      <label><Mail size={16}/> Correo Electrónico</label>
+                      <label><Mail size={16}/> Correo Electrónico <span style={{fontWeight: 400, color: '#718096', fontSize: '0.8rem'}}>(opcional)</span></label>
                       <input 
                         type="email" 
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        required 
                         placeholder="ejemplo@correo.com" 
                       />
                     </div>
