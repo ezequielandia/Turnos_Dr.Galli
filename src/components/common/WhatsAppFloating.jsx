@@ -16,14 +16,14 @@ const WhatsAppFloating = () => {
   }, []);
 
   const phoneNumber = "5492284722879";
-  const message = "Hola Dr. Galli, me gustaría hacer una consulta.";
+  const message = "Hola, me gustaría hacer una consulta con el Dr. Galli.";
   const waLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <div className={styles.container}>
       {showTooltip && (
         <div className={styles.tooltip}>
-          ¿Tenés una urgencia?<br />Hablá conmigo ahora.
+          ¿Tenés alguna consulta?<br />Contactanos ahora.
         </div>
       )}
       <a 
